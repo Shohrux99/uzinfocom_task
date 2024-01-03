@@ -1,0 +1,155 @@
+.wrapper {
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.25);
+  .item {
+    display: grid;
+    grid-template-columns: 80px 2fr 1fr 1fr 1fr;
+    padding: 9px 23px 9px 10px;
+    gap: 18px;
+
+    .image {
+      width: 80px;
+      height: 80px;
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .title {
+        color: #1e1e1e;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 3px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+
+      .additionDescription {
+        color: #1e1e1e;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+    }
+
+    .quantity {
+      display: flex;
+      align-items: center;
+      .number {
+        color: #393939;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+      }
+
+      .buttons {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        gap: 3px;
+        .button {
+          width: 0;
+          height: 0;
+          border-style: solid;
+          border-width: 0 10px 10px 10px; /* Adjust the values to change the size of the triangle */
+          border-color: transparent transparent #000 transparent; /* Set your desired background color */
+          cursor: pointer;
+          background: none;
+          padding: 0;
+
+          &.down {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+
+    .price {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .number {
+        color: #393939;
+        text-align: right;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+    }
+
+    .remove {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      button {
+        width: 25px;
+        height: 25px;
+        background: none;
+        border: none;
+        margin: 0;
+        padding: 0;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+.productInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  .image {
+    width: 100px;
+    height: 100px;
+    min-width: 100px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  .content {
+    .title {
+      color: #1e1e1e;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      margin-bottom: 3px;
+    }
+
+    .additionDescription {
+      color: #1e1e1e;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+}

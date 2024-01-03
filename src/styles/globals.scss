@@ -1,0 +1,36 @@
+@import 'unit';
+@import '../../public/fonts/font.css';
+
+:root {
+  --primary-color: #51267d;
+  --secondary-color: #fdc100;
+  --text-color: #696969;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Montserrat;
+}
+
+button{
+  transition: .2s;
+  &:hover{
+    transform: translateY(-2px);
+    cursor: pointer;
+  }
+}
