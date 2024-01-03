@@ -1,5 +1,5 @@
-@import 'unit';
-@import '../../public/fonts/font.css';
+@import "unit";
+@import "../../public/fonts/font.css";
 
 :root {
   --primary-color: #51267d;
@@ -11,9 +11,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'SF Pro Display', -apple-system, BlinkMacSystemFont, Segoe UI,
-    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-    sans-serif;
+  font-family: Montserrat;
 }
 
 a {
@@ -27,9 +25,10 @@ a {
   font-family: Montserrat;
 }
 
-button{
-  transition: .2s;
-  &:hover{
+button {
+  transition: 0.2s;
+  font-family: Montserrat;
+  &:hover {
     transform: translateY(-2px);
     cursor: pointer;
   }

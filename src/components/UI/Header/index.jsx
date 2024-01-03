@@ -26,7 +26,7 @@ export default function Header() {
 
   return (
     <AppBar position="static">
-      <Container maxWidth="xl">
+      <Container maxWidth="xl"> 
         <Toolbar>
           <Box className={`${styles.items} ${styles.fromTablet}`}>
             {myLinks.map((link, index) => (
